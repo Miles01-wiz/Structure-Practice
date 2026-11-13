@@ -1,0 +1,71 @@
+:root {
+  --tk-navy: #2f285f;
+  --tk-ink: #1b1838;
+  --tk-text: #2a2740;
+  --tk-muted: #8a879c;
+  --tk-soft: #5c5a6e;
+  --tk-orange: #ff6b00;
+  --tk-orange-dark: #e05f00;
+  --tk-grey: #eceaf1;
+  --tk-line: #ecebf2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parent-div {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 24px;
+  height: 100vh;
+  border-radius: 20px;
+  /* border: 1px solid black; */
+}
+
+.left-div {
+  display: flex;
+  width: 50%;
+  padding: 20px;
+  height: 100vh;
+  gap: 10px;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: var(--tk-grey);
+}
+
+.right-div {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  /* gap: 24px; */
+  width: 50%;
+  text-align: left;
+}
+
+.logo-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.tekhub-logo {
+  width: 100%;
+}
+p {
+  color: var(--tk-soft);
+}
+
+.submit-btn {
+  background-color: var(--tk-orange);
+  color: white;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+}
