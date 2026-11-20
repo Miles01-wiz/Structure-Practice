@@ -3,39 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quiz Night</title>
     <link rel="stylesheet" href="quiz.css" />
     <script src="quiz.js" defer></script>
   </head>
-  <body>
-    <section class="p-sec">
-      <div class="p-div">
-        <h1 class="quiz-title">Quiz Night</h1>
-        <div class="top-para">
-          <p class="progress"></p>
-          <span>Score: 1</span>
-        </div>
-        <h2 class="question">Which tag creates a link in HTML?</h2>
-        <div class="grid-items">
-          <div>
-            <button class="grid-item"><code>&lt;link&gt;</code></button>
-          </div>
-          <div>
-            <button class="grid-item"><code>&lt;a&gt;</code></button>
-          </div>
-          <div>
-            <button class="grid-item"><code>&lt;href&gt;</code></button>
-          </div>
-          <div>
-            <button class="grid-item"><code>&lt;url&gt;</code></button>
-          </div>
-        </div>
 
-        <div class="footer-para hidden">
-          <p>Correct!</p>
-          <button class="next-btn">Next</button>
+  <body>
+    <main class="content-page" aria-label="Quiz start">
+      <h1 class="title">Quiz Night</h1>
+      <div class="quiz">
+        <div class="status flex">
+          <p class="progress"></p>
+          <p class="score">Score: <span class="score-value">0</span></p>
+        </div>
+        <div class="question-box">
+          <h2>Question textGoes here</h2>
+        </div>
+        <div class="options-box">
+          <!--added click event-->
+          <button class="option">result</button>
+          <!--added click event-->
+          <button class="option">result</button>
+          <button class="option">result</button>
+          <button class="option">result</button>
+        </div>
+        <div class="footer flex hidden">
+          <p class="result">Correct!</p>
+          <button class="btn-action" disabled>Next</button>
         </div>
       </div>
-    </section>
+    </main>
   </body>
 </html>
